@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=GFS+Neohellenic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h4 {
+  font-family: "Fredoka", sans-serif;
+  font-size: 24px;
+}
+
+p {
+  font-family: "GFS Neohellenic", sans-serif;
+  font-size: 24px;
+}
+
+.p {
+  font-family: "Handlee", cursive;
+  font-size: 24px;
+}
+
+.btn1 {
+  font-family: "GFS Neohellenic", sans-serif;
+  border: 4px solid #07BEB8;
+  border-radius: 20px;
+  background: #3DCCC7;
+  color: #FFFFFF;
+  width: 200px;
+  height: 80px;
+  font-size: 40px;
+}
+.btn1:hover {
+  background: #FFFFFF;
+  color: #07BEB8;
+}
+.btn1:active {
+  background: #07BEB8;
+  color: #FFFFFF;
+}
+
+.btn2 {
+  font-family: "GFS Neohellenic", sans-serif;
+  border: 4px solid #07BEB8;
+  border-radius: 20px;
+  background: #07BEB8;
+  color: #FFFFFF;
+  width: 200px;
+  height: 80px;
+  font-size: 40px;
+}
+.btn2:hover {
+  background: #3DCCC7;
+  color: #FFFFFF;
+}
+.btn2:active {
+  background: #FFFFFF;
+  color: #07BEB8;
+}
+
+.btn3 {
+  font-family: "GFS Neohellenic", sans-serif;
+  border: 4px solid #07BEB8;
+  border-radius: 20px;
+  background: #FFFFFF;
+  color: #07BEB8;
+  width: 200px;
+  height: 80px;
+  font-size: 40px;
+}
+.btn3:hover {
+  background: #07BEB8;
+  color: #FFFFFF;
+}
+.btn3:active {
+  background: #3DCCC7;
+  color: #FFFFFF;
+}
+
+.search {
+  font-family: "GFS Neohellenic", sans-serif;
+  border-radius: 20px;
+  background: #07BEB8;
+  border: 4px solid #C4FFF9;
+  color: #C4FFF9;
+  text-align: center;
+  padding: 0 20px;
+  width: 600px;
+  height: 40px;
+  font-size: 24px;
+}
+.search::-webkit-input-placeholder {
+  color: #C4FFF9;
+}
+.search::-moz-placeholder {
+  color: #C4FFF9;
+}
+.search:-ms-input-placeholder {
+  color: #C4FFF9;
+}
+.search::-ms-input-placeholder {
+  color: #C4FFF9;
+}
+.search::placeholder {
+  color: #C4FFF9;
+}
+.search:hover {
+  border-color: #ffffff;
+}
+.search:focus {
+  border-color: #ffffff;
+  color: #ffffff;
+  outline: none;
+}
+.search:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.search:focus::-moz-placeholder {
+  color: transparent;
+}
+.search:focus:-ms-input-placeholder {
+  color: transparent;
+}
+.search:focus::-ms-input-placeholder {
+  color: transparent;
+}
+.search:focus::placeholder {
+  color: transparent;
+}
+
+.forInputDiv {
+  background-color: #3DCCC7;
+  height: 100px;
+  width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+a {
+  font-family: "Fredoka", sans-serif;
+  position: relative;
+  color: #C4FFF9;
+  text-decoration: none;
+  font-size: 24px;
+}
+a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: #C4FFF9;
+  opacity: 0;
+  -webkit-transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, transform 300ms;
+  transition: opacity 300ms, transform 300ms, -webkit-transform 300ms;
+  opacity: 1;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+a:hover::after, a:focus::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+}
+
+li {
+  margin: 0 2rem;
+}
