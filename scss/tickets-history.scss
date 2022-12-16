@@ -1,0 +1,33 @@
+@import "_mixins.scss";
+main {
+  display: flex;
+  justify-content: center;
+}
+.tickets-history {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 120px;
+  width: 100%;
+  max-width: 1800px;
+  gap: 50px 30px;
+}
+
+@media (max-width: 1789px) {
+  .tickets-history {
+    justify-content: center;
+  }
+}
+.tickets-history__ticket {
+}
+@media (max-width: 1400px) {
+  .authorization-form {
+    font-size: $font32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .authorization-form {
+    font-size: $font24px;
+  }
+}

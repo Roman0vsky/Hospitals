@@ -1,0 +1,89 @@
+@import "_mixins.scss";
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.authorization-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $dark-color;
+  border-radius: 20px;
+  font-size: $font40px;
+
+  max-width: 1000px;
+  width: 700px;
+  height: 450px;
+}
+.authorization-form__form-links .form-links__authorization {
+  text-decoration: underline;
+  @include main-text;
+}
+.authorization-form__form-links .form-links__registration {
+  @include link;
+  @include main-text;
+}
+.authorization-form__input {
+}
+.input {
+  @include input;
+  font-size: $font40px;
+  @include text;
+  margin-top: 30px;
+}
+.authorization-form__submit {
+  @include default-btn;
+  @include text;
+  font-size: $font40px;
+  width: 300px;
+  height: 70px;
+  margin-top: 20px;
+}
+.authorization-form__password-recovery {
+  @include text;
+  @include link;
+  margin-top: 10px;
+}
+@media (max-width: 1400px) {
+  .authorization-form,
+  .input,
+  .authorization-form__submit {
+    font-size: $font32px;
+  }
+  .authorization-form {
+    width: 500px;
+    height: 400px;
+  }
+  .authorization-form__submit {
+    width: 200px;
+    height: 60px;
+  }
+  .input {
+    max-width: 400px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .authorization-form,
+  .input,
+  .authorization-form__submit {
+    font-size: $font24px;
+  }
+  .authorization-form {
+    width: 400px;
+    height: 290px;
+  }
+  .authorization-form__submit {
+    width: 150px;
+    height: 45px;
+  }
+  .input {
+    max-width: 320px;
+    height: 40px;
+    margin-top: 20px;
+  }
+}

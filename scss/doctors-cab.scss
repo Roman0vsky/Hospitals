@@ -1,0 +1,197 @@
+@import "_mixins.scss";
+main {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1920px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.doctors-cab {
+  display: flex;
+  max-width: 1920px;
+  width: 100%;
+  height: 100%;
+  padding-top: 120px;
+  flex-direction: column;
+  align-items: center;
+}
+.doctors-cab__title {
+  @include main-text;
+  color: $dark-color;
+  font-size: $font40px;
+}
+.doctors-cab__form {
+  max-width: 1920px;
+  width: 100%;
+  height: 100%;
+  margin-top: 40px;
+}
+.form {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+.form__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 500px;
+  width: 100%;
+  min-height: 710px;
+  height: 100%;
+}
+.container {
+  margin-bottom: 30px;
+}
+.container_first {
+}
+.container_second {
+  margin: 0 30px;
+}
+.container_third {
+}
+.container__info {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  height: 100%;
+}
+.info {
+}
+.input {
+  @include input;
+  font-size: $font32px;
+  max-width: 500px;
+  width: 100%;
+  height: 80px;
+  margin-bottom: 30px;
+}
+.info__input-surname {
+}
+.info__input-name {
+}
+.info__input-middle-name {
+}
+.info__input-specialization {
+}
+.container__btn-delete {
+  @include delete-btn;
+  font-size: $font40px;
+  max-width: 300px;
+  width: 100%;
+  height: 80px;
+}
+.container__pic {
+  max-height: 500px;
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container__pic > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.container__btn-save {
+  @include default-btn;
+  font-size: $font40px;
+  max-width: 250px;
+  width: 100%;
+  height: 80px;
+}
+.container__work-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $dark-color;
+  border: 4px solid $light-color;
+  border-radius: 20px;
+  color: $light-color;
+  font-size: $font32px;
+  max-width: 500px;
+  width: 100%;
+  min-height: 500px;
+  height: 100%;
+}
+.container__btn-tickets {
+  @include default-btn;
+  font-size: $font40px;
+  max-width: 300px;
+  width: 100%;
+  height: 80px;
+}
+.container_fourth {
+  display: none;
+}
+@media (max-width: 1400px) {
+  .input,
+  .container__work-time {
+    font-size: $font24px;
+  }
+  .doctors-cab__title,
+  .container__btn-delete,
+  .container__btn-save,
+  .container__btn-tickets {
+    font-size: $font32px;
+  }
+  .form {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  .container_first {
+    order: 1;
+  }
+  .container_second {
+    margin: 0;
+    order: 0;
+  }
+  .container_third {
+    order: 2;
+  }
+  .form__container {
+    min-height: 610px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 1169px) {
+  .container_first .container__btn-delete,
+  .container_second .container__btn-save,
+  .container_third .container__btn-tickets {
+    display: none;
+  }
+  .container_fourth {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    order: 3;
+  }
+  .form__container {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .input,
+  .container__work-time {
+    font-size: $font20px;
+  }
+  .doctors-cab__title,
+  .container__btn-delete,
+  .container__btn-save,
+  .container__btn-tickets {
+    font-size: $font24px;
+  }
+  .container_fourth .container__btn-delete,
+  .container_fourth .container__btn-save,
+  .container_fourth .container__btn-tickets {
+    width: 250px;
+  }
+}

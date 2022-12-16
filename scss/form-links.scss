@@ -1,0 +1,13 @@
+@import "_mixins.scss";
+.form-links {
+  @include main-text;
+  color: $light-color;
+}
+.form-links__registration {
+  @include main-text;
+  color: $light-color;
+}
+.form-links__authorization {
+  @include main-text;
+  color: $light-color;
+}

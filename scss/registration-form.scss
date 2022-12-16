@@ -1,0 +1,122 @@
+@import "_mixins.scss";
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-height: 700px;
+}
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $dark-color;
+  border-radius: 20px;
+  font-size: $font40px;
+  width: 700px;
+  height: 900px;
+  margin-top: 20px;
+  padding: 15px;
+}
+.registration-form__form-links {
+  margin-top: 30px;
+}
+.registration-form__form-links .form-links__registration {
+  text-decoration: underline;
+}
+.registration-form__form-links .form-links__authorization {
+  @include link;
+}
+.registration-form__input {
+}
+.input {
+  margin-top: 20px;
+  @include input;
+  @include text;
+  max-width: 570px;
+  width: 100%;
+  height: 70px;
+
+  font-size: $font40px;
+}
+.registration-form__manager {
+  margin: 25px 0;
+}
+.manager {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.manager__checkbox {
+  width: 30px;
+  height: 30px;
+}
+.manager__label {
+  @include text;
+  color: $light-color;
+}
+.registration-form__submit {
+  @include default-btn;
+  width: 300px;
+  height: 80px;
+  font-size: $font40px;
+  @include text;
+}
+
+@media (max-width: 1400px) {
+  .registration-form,
+  .registration-form__submit,
+  .input {
+    font-size: $font32px;
+  }
+  .registration-form {
+    width: 500px;
+    height: 640px;
+  }
+  .input {
+    max-width: 400px;
+    height: 60px;
+  }
+  .registration-form__submit {
+    width: 200px;
+    height: 70px;
+  }
+  .manager__checkbox {
+    width: 20px;
+    height: 20px;
+  }
+  .registration-form__manager {
+    margin: 15px 0;
+  }
+  .registration-form__form-links {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .registration-form,
+  .registration-form__submit,
+  .input {
+    font-size: $font24px;
+  }
+  .registration-form {
+    width: 400px;
+    height: 550px;
+  }
+  .input {
+    max-width: 320px;
+    height: 40px;
+  }
+  .registration-form__submit {
+    width: 150px;
+    height: 70px;
+  }
+  .registration-form__manager {
+    margin: 10px 0;
+  }
+  body {
+    min-height: 600px;
+  }
+}

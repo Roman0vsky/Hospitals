@@ -1,0 +1,29 @@
+@import "_mixins.scss";
+main {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.catalog {
+  padding-top: 210px;
+  max-width: 1180px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 1500px) {
+  main {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .catalog {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+}

@@ -1,0 +1,94 @@
+@import "_mixins.scss";
+.review {
+  display: flex;
+
+  padding-top: 120px;
+  max-width: 510px;
+  width: 100%;
+  height: 100%;
+  margin-right: 50px;
+}
+.review__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.review__input {
+  @include search;
+  &:hover {
+    border-color: $light-color;
+  }
+  font-size: $font32px;
+
+  max-width: 510px;
+  width: 100%;
+  min-height: 450px;
+  height: 100%;
+}
+.review__btns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 250px;
+  margin-top: 20px;
+}
+.review__submit-btn {
+  @include default-btn;
+  font-size: $font40px;
+
+  width: 250px;
+  height: 80px;
+  margin-top: 30px;
+}
+.review__delete-btn {
+  @include delete-btn;
+  font-size: $font40px;
+
+  width: 250px;
+  height: 80px;
+  margin-top: 30px;
+}
+@media (max-width: 1500px) {
+  .review {
+    margin-right: 0;
+  }
+}
+@media (max-width: 1400px) {
+  .review__submit-btn,
+  .review__delete-btn {
+    font-size: $font32px;
+  }
+  .review__input {
+    font-size: $font24px;
+  }
+  .review__submit-btn,
+  .review__delete-btn {
+    width: 200px;
+    height: 60px;
+    margin-top: 0;
+  }
+  .review__btns {
+    max-width: 430px;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .review__submit-btn,
+  .review__delete-btn {
+    font-size: $font24px;
+  }
+  .review__input {
+    font-size: $font20px;
+  }
+  .review__submit-btn,
+  .review__delete-btn {
+    width: 180px;
+    height: 60px;
+  }
+}

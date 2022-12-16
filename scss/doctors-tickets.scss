@@ -1,0 +1,34 @@
+@import "_mixins.scss";
+main {
+  display: flex;
+  justify-content: center;
+}
+.doctors-tickets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 120px;
+  width: 100%;
+  height: 100%;
+  max-width: 1800px;
+  gap: 30px 50px;
+}
+.doctors-tickets__ticket {
+}
+@media (max-width: 1809px) {
+  .doctors-tickets {
+    justify-content: center;
+  }
+}
+
+/* @media (max-width: 1400px) {
+  .authorization-form {
+    font-size: $font32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .authorization-form {
+    font-size: $font24px;
+  }
+} */

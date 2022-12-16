@@ -1,0 +1,68 @@
+@import "_mixins.scss";
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.reg-success-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: $dark-color;
+  border-radius: 20px;
+  font-size: $font40px;
+  padding: 20px;
+  width: 700px;
+  height: 610px;
+}
+.reg-success-form__title {
+  @include main-text;
+  color: $light-color;
+  max-width: 440px;
+  text-align: center;
+}
+.reg-success-form__text {
+  @include text;
+  color: $light-color;
+  max-width: 640px;
+  text-align: center;
+}
+.reg-success-form__link {
+  font-weight: bold;
+  @include link;
+}
+.reg-success-form__submit {
+  font-size: $font40px;
+  color: $light-color;
+  background: none;
+  border: none;
+}
+@media (max-width: 1400px) {
+  .reg-success-form,
+  .reg-success-form__submit {
+    font-size: $font32px;
+  }
+  .reg-success-form {
+    width: 510px;
+    height: 450px;
+  }
+  .reg-success-form__title {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  .reg-success-form,
+  .reg-success-form__submit {
+    font-size: $font24px;
+  }
+  .reg-success-form {
+    width: 400px;
+    height: 320px;
+  }
+  .reg-success-form__title {
+    max-width: 250px;
+  }
+}

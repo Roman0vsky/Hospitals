@@ -1,0 +1,55 @@
+@import "_mixins.scss";
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 30px;
+}
+.change-pswrd__input {
+  @include input;
+}
+.change-pswrd-form__submit {
+  @include default-btn;
+}
+.change-pswrd-form__password-recovery {
+  @include link;
+}
+.change-pswrd-success-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $dark-color;
+  border-radius: 20px;
+  font-size: $font40px;
+
+  gap: 120px;
+  width: 700px;
+  height: 320px;
+}
+.change-pswrd-success__title {
+  @include main-text;
+  color: $light-color;
+  text-align: center;
+}
+.change-pswrd-success__authorization {
+  @include link;
+}
+@media (max-width: 1400px) {
+  .change-pswrd-success-form {
+    font-size: $font32px;
+    width: 500px;
+    height: 250px;
+    gap: 90px;
+  }
+}
+
+@media (max-width: 600px) {
+  .change-pswrd-success-form {
+    font-size: $font24px;
+    width: 400px;
+    height: 200px;
+    gap: 60px;
+  }
+}

@@ -1,0 +1,21 @@
+@import "_mixins.scss";
+.catalog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 100px;
+  height: 100%;
+}
+/* @media (max-width: 1400px) {
+  .authorization-form {
+    font-size: $font32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .authorization-form {
+    font-size: $font24px;
+  }
+}
+ */
