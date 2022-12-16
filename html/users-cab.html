@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/users-cab.css">
+    <title>Hospitals</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav nav">
+            <div class="nav__logo">
+                <a href="./hospitals.html">
+                    <img src="../imgs/logo.png" alt="logo">
+                </a>
+            </div>
+
+            <div class="nav__dropdown-block dropdown">
+                <button class="dropdown__btn"">Tickets</button>
+                <div class=" dropdown__content">
+                    <a class="dropdown__link" href="./tickets.html">Active</a>
+                    <a class="dropdown__link" href="./tickets-history.html">History</a>
+            </div>
+            </div>
+
+            <input class="nav__search" type="search" autocomplete="off" maxlength="200" placeholder="Search">
+            <div class="nav__link-block">
+                <a class="nav__link" href="./users-cab.html">Cabinet</a>
+            </div>
+            <div class="nav__link-block">
+                <a class="nav__link" href="./authorization.html">Log out</a>
+            </div>
+
+
+            <input class="nav__mobile-checkbox" id="menu-toggle" type="checkbox" />
+            <label class="nav__mobile-btn-container menu-button-container" for="menu-toggle">
+                <div class="nav__mobile-btn menu-button"></div>
+            </label>
+            <ul class="nav__mobile-menu menu">
+                <li>
+                    <a class="nav__link" id="link1" href="./tickets.html">Active tickets</a>
+                </li>
+                <li><a class="nav__link" href="./tickets-history.html">Tickets history</a></li>
+                <li><a class="nav__link" href="./users-cab.html">Cabinet</a></li>
+                <li><a class="nav__link" href="./authorization.html">Log out</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="users-cab">
+            <div class="users-cab__title">Personal information</div>
+            <form class="users-cab__form form">
+                <div class="form__container container container_first">
+                    <div class="container__info info">
+                        <input type="text" class="info__input-surname input" placeholder="Surname" value="Surname">
+                        <input type="text" class="info__input-name input" placeholder="Name" value="Name">
+                        <input type="text" class="info__input-middle-name input" placeholder="Middle name"
+                            value="Middle name">
+                        <select class="info__sex sex input">
+                            <option class="sex__option" value="Male">Male</option>
+                            <option class="sex__option" value="Female">Female</option>
+                        </select>
+                        <input class="info__birthday input" type="date">
+                        <input type="tel" class="info__input-tel input" placeholder="Phone number" value="Phone number">
+                        <input type="text" class="info__address input" placeholder="Address" value="Address">
+                    </div>
+                </div>
+
+                <div class="form__container container container_second">
+                    <div class="container__pic">
+                        <img src="../imgs/pic2.png">
+                    </div>
+                    <div class="container_second__container-for-btns">
+                        <input class="container__btn-change-pswrd" type="button" value="Change password"
+                            onclick="location.href = './change-pswrd.html'">
+                        <input class="container__btn-save" type="submit" value="Save">
+                    </div>
+                </div>
+
+                <div class="form__container container container_third">
+                    <div class="container__info2 info2">
+                        <input type="email" class="info2__input-email input" placeholder="Email"
+                            value="Email@gmail.com">
+                        <div class="info2__status">Status</div>
+                        <div class="info2__last-visit">Last visit</div>
+                    </div>
+                    <input class="container__btn-delete" type="button" value="Delete account">
+                </div>
+
+                <div class="form__container container container_fourth">
+                    <input class="container__btn-save" type="submit" value="Save">
+                    <input class="container__btn-change-pswrd" type="button" value="Change password"
+                        onclick="location.href = './change-pswrd.html'">
+                    <input class="container__btn-delete" type="button" value="Delete account">
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>

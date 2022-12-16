@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/hospitals-info.css">
+    <link rel="stylesheet" href="../css/card.css">
+    <link rel="stylesheet" href="../css/hospital-navigation.css">
+    <title>Hospitals</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav nav">
+            <div class="nav__logo">
+                <a href="./hospitals.html">
+                    <img src="../imgs/logo.png" alt="logo">
+                </a>
+            </div>
+
+            <div class="nav__dropdown-block dropdown">
+                <button class="dropdown__btn"">Tickets</button>
+                <div class=" dropdown__content">
+                    <a class="dropdown__link" href="./tickets.html">Active</a>
+                    <a class="dropdown__link" href="./tickets-history.html">History</a>
+            </div>
+            </div>
+
+            <input class="nav__search" type="search" autocomplete="off" maxlength="200" placeholder="Search">
+            <div class="nav__link-block">
+                <a class="nav__link" href="./users-cab.html">Cabinet</a>
+            </div>
+            <div class="nav__link-block">
+                <a class="nav__link" href="./authorization.html">Log out</a>
+            </div>
+
+
+            <input class="nav__mobile-checkbox" id="menu-toggle" type="checkbox" />
+            <label class="nav__mobile-btn-container menu-button-container" for="menu-toggle">
+                <div class="nav__mobile-btn menu-button"></div>
+            </label>
+            <ul class="nav__mobile-menu menu">
+                <li>
+                    <a class="nav__link" id="link1" href="./tickets.html">Active tickets</a>
+                </li>
+                <li><a class="nav__link" href="./tickets-history.html">Tickets history</a></li>
+                <li><a class="nav__link" href="./users-cab.html">Cabinet</a></li>
+                <li><a class="nav__link" href="./authorization.html">Log out</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hospital-navigation">
+            <p class="hospital-navigation__title">Hospital information</p>
+            <div class="hospital-navigation__pic">
+                <img src="../imgs/pic2.png" alt="pic2">
+            </div>
+            <div class="hospital-navigation__name">Name</div>
+            <div class="hospital-navigation__address">Address</div>
+            <div class="hospital-navigation__work-time">Work time</div>
+            <div class="hospital-navigation__phone-number">Phone number</div>
+            <div class="hospital-navigation__email">Email</div>
+            <form class="hospital-navigation__form-for-btn">
+                <input class="hospital-navigation__btn-reviews" type="button" value="Check reviews"
+                    onClick='location.href="./reviewes.html"'>
+            </form>
+        </div>
+
+        <div class="catalog">
+            <div class="catalog__card card" onclick="location.href = './doctors-info.html'">
+                <div class="card__pic">
+                    <img src="../imgs/pic.png" alt="pic2">
+                </div>
+                <div class="card__info">
+                    <div class="card__doctor-name">Doctor's name</div>
+                    <div class="card__specialization">Doctor's specialization</div>
+                </div>
+            </div>
+            <div class="catalog__card card" onclick="location.href = './doctors-info.html'">
+                <div class="card__pic">
+                    <img src="../imgs/pic.png" alt="pic2">
+                </div>
+                <div class="card__info">
+                    <div class="card__doctor-name">Doctor's name</div>
+                    <div class="card__specialization">Doctor's specialization</div>
+                </div>
+            </div>
+            <div class="catalog__card card" onclick="location.href = './doctors-info.html'">
+                <div class="card__pic">
+                    <img src="../imgs/pic.png" alt="pic2">
+                </div>
+                <div class="card__info">
+                    <div class="card__doctor-name">Doctor's name</div>
+                    <div class="card__specialization">Doctor's specialization</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

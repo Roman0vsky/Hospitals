@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/doctors-info.css">
+    <title>Hospitals</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav nav">
+            <div class="nav__logo">
+                <a href="./hospitals.html">
+                    <img src="../imgs/logo.png" alt="logo">
+                </a>
+            </div>
+
+            <div class="nav__dropdown-block dropdown">
+                <button class="dropdown__btn"">Tickets</button>
+                <div class=" dropdown__content">
+                    <a class="dropdown__link" href="./tickets.html">Active</a>
+                    <a class="dropdown__link" href="./tickets-history.html">History</a>
+            </div>
+            </div>
+
+            <input class="nav__search" type="search" autocomplete="off" maxlength="200" placeholder="Search">
+            <div class="nav__link-block">
+                <a class="nav__link" href="./users-cab.html">Cabinet</a>
+            </div>
+            <div class="nav__link-block">
+                <a class="nav__link" href="./authorization.html">Log out</a>
+            </div>
+
+
+            <input class="nav__mobile-checkbox" id="menu-toggle" type="checkbox" />
+            <label class="nav__mobile-btn-container menu-button-container" for="menu-toggle">
+                <div class="nav__mobile-btn menu-button"></div>
+            </label>
+            <ul class="nav__mobile-menu menu">
+                <li>
+                    <a class="nav__link" id="link1" href="./tickets.html">Active tickets</a>
+                </li>
+                <li><a class="nav__link" href="./tickets-history.html">Tickets history</a></li>
+                <li><a class="nav__link" href="./users-cab.html">Cabinet</a></li>
+                <li><a class="nav__link" href="./authorization.html">Log out</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="doctor-navigation">
+            <p class="doctor-navigation__title">Doctor information</p>
+            <div class="doctor-navigation__pic">
+                <img src="../imgs/pic.png" alt="img">
+            </div>
+            <div class="doctor-navigation__name">Name</div>
+            <div class="doctor-navigation__specialization">Specialization</div>
+        </div>
+
+        <form class="calendar-form">
+            <div class="calendar-form__calendar">Calendar</div>
+            <input class="calendar-form__btn" type="submit" value="Confirm">
+        </form>
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/registration-form.css">
+    <link rel="stylesheet" href="../css/form-links.css">
+    <title>Hospitals</title>
+</head>
+
+<body>
+    <form class="registration-form" action="./registration-success.html">
+        <div class="registration-form__form-links form-links">
+            <a href="" class="form-links__registration" onclick="return false">Registration</a>
+            /
+            <a href="./authorization.html" class="form-links__authorization">Authorization</a>
+        </div>
+        <input type="text" class="registration-form__input input" placeholder="Login">
+        <input type="text" class="registration-form__input input" placeholder="Surname">
+        <input type="text" class="registration-form__input input" placeholder="Name">
+        <input type="text" class="registration-form__input input" placeholder="Middle name">
+        <input type="email" class="registration-form__input input" placeholder="Email">
+        <input type="password" class="registration-form__input input" placeholder="Password">
+        <input type="password" class="registration-form__input input" placeholder="Confirm password">
+        <div class="registration-form__manager manager">
+            <input type="checkbox" id="Manager" class="manager__checkbox">
+            <label for="Manager" class="manager__label">Are you a manager?</label>
+        </div>
+        <input type="submit" class="registration-form__submit" value="Register">
+    </form>
+</body>
+
+</html>
