@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=GFS+Neohellenic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  padding: 0 60px 30px;
+}
+
+@media (max-width: 1000px) {
+  main {
+    padding: 0 30px 30px;
+  }
+}
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.change-pswrd-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #07beb8;
+  border-radius: 20px;
+  font-size: 40px;
+  margin-top: 120px;
+  padding: 20px;
+  gap: 30px;
+  width: 700px;
+  height: 700px;
+}
+
+.change-pswrd-form__title {
+  font-family: "Fredoka", sans-serif;
+  color: #c4fff9;
+}
+
+.input {
+  color: #c4fff9;
+  border-radius: 20px;
+  border: 4px solid #c4fff9;
+  background: #07beb8;
+  text-align: center;
+  font-size: 40px;
+  font-family: "GFS Neohellenic", sans-serif;
+  max-width: 570px;
+  width: 100%;
+  height: 80px;
+}
+.input::-webkit-input-placeholder {
+  color: #c4fff9;
+}
+.input::-moz-placeholder {
+  color: #c4fff9;
+}
+.input:-ms-input-placeholder {
+  color: #c4fff9;
+}
+.input::-ms-input-placeholder {
+  color: #c4fff9;
+}
+.input::placeholder {
+  color: #c4fff9;
+}
+.input:hover {
+  border-color: #ffffff;
+}
+.input:focus {
+  border-color: #ffffff;
+  color: #ffffff;
+  outline: none;
+}
+.input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.input:focus::-moz-placeholder {
+  color: transparent;
+}
+.input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+.input:focus::-ms-input-placeholder {
+  color: transparent;
+}
+.input:focus::placeholder {
+  color: transparent;
+}
+
+.change-pswrd-form__submit {
+  font-family: "GFS Neohellenic", sans-serif;
+  border: 4px solid #07beb8;
+  border-radius: 20px;
+  background: #3dccc7;
+  color: #ffffff;
+  margin: 50px 0 10px;
+  font-size: 40px;
+  width: 250px;
+  height: 80px;
+}
+.change-pswrd-form__submit:hover {
+  background: #ffffff;
+  color: #07beb8;
+}
+.change-pswrd-form__submit:active {
+  background: #07beb8;
+  color: #ffffff;
+}
+
+.change-pswrd-form__password-recovery {
+  position: relative;
+  color: #c4fff9;
+  text-decoration: none;
+  font-family: "GFS Neohellenic", sans-serif;
+}
+.change-pswrd-form__password-recovery::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: #c4fff9;
+  -webkit-transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, transform 300ms;
+  transition: opacity 300ms, transform 300ms, -webkit-transform 300ms;
+  opacity: 1;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+.change-pswrd-form__password-recovery:hover::after, .change-pswrd-form__password-recovery:focus::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+@media (max-width: 1400px) {
+  .change-pswrd-form,
+.change-pswrd-form__submit,
+.input {
+    font-size: 32px;
+  }
+  .input {
+    max-width: 400px;
+    height: 60px;
+  }
+  .change-pswrd-form {
+    width: 600px;
+    height: 550px;
+    margin-top: 90px;
+  }
+  .change-pswrd-form__submit {
+    margin: 20px 0 0;
+    width: 200px;
+    height: 60px;
+  }
+}
+@media (max-width: 600px) {
+  .change-pswrd-form,
+.change-pswrd-form__submit,
+.input {
+    font-size: 24px;
+  }
+  .input {
+    max-width: 320px;
+    height: 40px;
+  }
+  .change-pswrd-form {
+    gap: 15px;
+    width: 400px;
+    height: 360px;
+  }
+  .change-pswrd-form__submit {
+    margin: 10px 0 0;
+    width: 160px;
+    height: 50px;
+  }
+}

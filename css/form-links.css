@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=GFS+Neohellenic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  padding: 0 60px 30px;
+}
+
+@media (max-width: 1000px) {
+  main {
+    padding: 0 30px 30px;
+  }
+}
+.form-links {
+  font-family: "Fredoka", sans-serif;
+  color: #c4fff9;
+}
+
+.form-links__registration {
+  font-family: "Fredoka", sans-serif;
+  color: #c4fff9;
+}
+
+.form-links__authorization {
+  font-family: "Fredoka", sans-serif;
+  color: #c4fff9;
+}

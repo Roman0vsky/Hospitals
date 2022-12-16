@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=GFS+Neohellenic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  padding: 0 60px 30px;
+}
+
+@media (max-width: 1000px) {
+  main {
+    padding: 0 30px 30px;
+  }
+}
+.hospital-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 120px;
+  max-width: 500px;
+  width: 100%;
+  font-size: 40px;
+  margin-right: 60px;
+}
+
+.hospital-navigation__title {
+  font-family: "Fredoka", sans-serif;
+  color: #07beb8;
+  margin-bottom: 40px;
+}
+
+.hospital-navigation__pic {
+  max-width: 500px;
+  width: 100%;
+  height: 100%;
+  max-height: 500px;
+  margin-bottom: 50px;
+}
+
+.hospital-navigation__pic > img {
+  max-width: 500px;
+  max-height: 500px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.hospital-navigation__name,
+.hospital-navigation__address,
+.hospital-navigation__work-time,
+.hospital-navigation__phone-number,
+.hospital-navigation__email {
+  font-family: "GFS Neohellenic", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 500px;
+  max-height: 160px;
+  min-height: 80px;
+  width: 100%;
+  height: 100%;
+  border: 4px solid #c4fff9;
+  border-radius: 20px;
+  background: #07beb8;
+  color: #c4fff9;
+  margin-bottom: 30px;
+}
+
+.hospital-navigation__name {
+  min-height: 160px;
+}
+
+.hospital-navigation__form-for-btn {
+  max-width: 320px;
+  width: 100%;
+  height: 100%;
+  margin: 20px 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hospital-navigation__btn-reviews,
+.hospital-navigation__btn-add-doctor {
+  font-family: "GFS Neohellenic", sans-serif;
+  border: 4px solid #07beb8;
+  border-radius: 20px;
+  background: #3dccc7;
+  color: #ffffff;
+  font-size: 40px;
+  max-width: 320px;
+  width: 100%;
+  height: 80px;
+  margin-bottom: 30px;
+}
+.hospital-navigation__btn-reviews:hover,
+.hospital-navigation__btn-add-doctor:hover {
+  background: #ffffff;
+  color: #07beb8;
+}
+.hospital-navigation__btn-reviews:active,
+.hospital-navigation__btn-add-doctor:active {
+  background: #07beb8;
+  color: #ffffff;
+}
+
+.hospital-navigation__btn-delete {
+  font-family: "GFS Neohellenic", sans-serif;
+  border: 4px solid #07beb8;
+  border-radius: 20px;
+  background: #ffffff;
+  color: #07beb8;
+  font-size: 40px;
+  max-width: 320px;
+  width: 100%;
+  height: 80px;
+  margin-bottom: 30px;
+}
+.hospital-navigation__btn-delete:hover {
+  background: #07beb8;
+  color: #ffffff;
+}
+.hospital-navigation__btn-delete:active {
+  background: #3dccc7;
+  color: #ffffff;
+}
+
+@media (max-width: 1500px) {
+  .hospital-navigation {
+    margin-right: 0;
+  }
+}
+@media (max-width: 1400px) {
+  .hospital-navigation,
+.hospital-navigation__btn-reviews,
+.hospital-navigation__btn-add-doctor,
+.hospital-navigation__btn-delete {
+    font-size: 32px;
+  }
+  .hospital-navigation__btn-reviews,
+.hospital-navigation__btn-add-doctor,
+.hospital-navigation__btn-delete {
+    height: 60px;
+  }
+}
+@media (max-width: 600px) {
+  .hospital-navigation,
+.hospital-navigation__btn-reviews,
+.hospital-navigation__btn-add-doctor,
+.hospital-navigation__btn-delete {
+    font-size: 24px;
+  }
+  .hospital-navigation__btn-reviews,
+.hospital-navigation__btn-add-doctor,
+.hospital-navigation__btn-delete {
+    width: 250px;
+  }
+}

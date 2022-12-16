@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=GFS+Neohellenic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  padding: 0 60px 30px;
+}
+
+@media (max-width: 1000px) {
+  main {
+    padding: 0 30px 30px;
+  }
+}
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.doctors-tickets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 120px;
+  width: 100%;
+  height: 100%;
+  max-width: 1800px;
+  gap: 30px 50px;
+}
+
+@media (max-width: 1809px) {
+  .doctors-tickets {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/* @media (max-width: 1400px) {
+  .authorization-form {
+    font-size: $font32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .authorization-form {
+    font-size: $font24px;
+  }
+} */

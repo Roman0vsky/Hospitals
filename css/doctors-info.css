@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=GFS+Neohellenic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  padding: 0 60px 30px;
+}
+
+@media (max-width: 1000px) {
+  main {
+    padding: 0 30px 30px;
+  }
+}
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1920px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.doctor-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 120px;
+  max-width: 500px;
+  width: 100%;
+  font-size: 40px;
+  margin-right: 60px;
+}
+
+.doctor-navigation__title {
+  font-family: "Fredoka", sans-serif;
+  color: #07beb8;
+  margin-bottom: 40px;
+}
+
+.doctor-navigation__pic {
+  max-width: 500px;
+  width: 100%;
+  height: 100%;
+  max-height: 500px;
+  margin-bottom: 50px;
+}
+
+.doctor-navigation__pic > img {
+  max-width: 500px;
+  max-height: 500px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.doctor-navigation__name,
+.doctor-navigation__specialization {
+  font-family: "GFS Neohellenic", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 500px;
+  max-height: 160px;
+  min-height: 80px;
+  width: 100%;
+  height: 100%;
+  border: 4px solid #c4fff9;
+  border-radius: 20px;
+  background: #07beb8;
+  color: #c4fff9;
+  margin-bottom: 30px;
+}
+
+.doctor-navigation__name {
+  min-height: 160px;
+}
+
+.calendar-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1150px;
+  width: 100%;
+  min-height: 820px;
+  height: 100%;
+  margin-top: 210px;
+}
+
+.calendar-form__calendar {
+  font-family: "GFS Neohellenic", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1150px;
+  width: 100%;
+  min-height: 710px;
+  height: 100%;
+  font-size: 40px;
+  background: #07beb8;
+  border: 4px solid #c4fff9;
+  border-radius: 20px;
+  color: #c4fff9;
+}
+
+.calendar-form__btn {
+  font-family: "GFS Neohellenic", sans-serif;
+  border: 4px solid #07beb8;
+  border-radius: 20px;
+  background: #3dccc7;
+  color: #ffffff;
+  width: 330px;
+  height: 80px;
+  font-size: 40px;
+  margin-top: 30px;
+}
+.calendar-form__btn:hover {
+  background: #ffffff;
+  color: #07beb8;
+}
+.calendar-form__btn:active {
+  background: #07beb8;
+  color: #ffffff;
+}
+
+@media (max-width: 1400px) {
+  .doctor-navigation,
+.calendar-form__calendar,
+.calendar-form__btn {
+    font-size: 32px;
+  }
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .calendar-form,
+.doctor-navigation {
+    margin: 0;
+  }
+}
+@media (max-width: 600px) {
+  .doctor-navigation,
+.calendar-form__calendar,
+.calendar-form__btn {
+    font-size: 24px;
+  }
+  .calendar-form__btn {
+    width: 250px;
+  }
+}

@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=GFS+Neohellenic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  padding: 0 60px 30px;
+}
+
+@media (max-width: 1000px) {
+  main {
+    padding: 0 30px 30px;
+  }
+}
+.ticket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 820px;
+  width: 100%;
+  max-height: 270px;
+  height: 100%;
+  font-size: 32px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 4px solid #07beb8;
+}
+
+.ticket__date,
+.ticket__doctor,
+.ticket__hospital,
+.ticket__user,
+.ticket__specialization,
+.ticket__time {
+  background: #07beb8;
+  color: #c4fff9;
+  border: 4px solid #c4fff9;
+  border-radius: 20px;
+}
+
+.ticket__date-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 810px;
+  width: 100%;
+  height: 60px;
+}
+
+.ticket_date-info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.ticket_date-info-container .ticket__date {
+  margin: 0 5px;
+}
+
+.ticket__time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 300px;
+  width: 100%;
+  height: 60px;
+}
+
+.ticket__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 420px;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.ticket__date_wider {
+  max-width: 482px;
+}
+
+.ticket__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 60px;
+  min-height: 60px;
+  background: none;
+  border: 4px solid #07beb8;
+  border-radius: 20px;
+}
+.ticket__btn:hover {
+  border-color: #c4fff9;
+}
+.ticket__btn:active > img {
+  width: 30px;
+  height: 30px;
+}
+
+.ticket__hospital,
+.ticket__user {
+  margin-bottom: 10px;
+}
+
+.ticket__hospital,
+.ticket__user,
+.ticket__doctor,
+.ticket__specialization {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 800px;
+  width: 100%;
+  height: 50px;
+}
+
+.ticket__specialization,
+.ticket__hospital,
+.ticket__user {
+  margin: 10px 0;
+}
+
+.ticket__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 300px;
+  gap: 5px;
+}
+
+.ticket__container .ticket__btn {
+  display: none;
+}
+
+@media (max-width: 1400px) {
+  .ticket {
+    font-size: 24px;
+  }
+}
+@media (max-width: 700px) {
+  .ticket__time,
+.ticket__date {
+    max-width: none;
+  }
+  .ticket {
+    max-height: 350px;
+  }
+  .ticket__date-info {
+    height: 130px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .ticket_date-info-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ticket_date-info-container .ticket__date {
+    margin: 0;
+  }
+  .ticket__btn {
+    display: none;
+  }
+  .ticket__container {
+    max-width: none;
+  }
+  .ticket__container .ticket__btn {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .ticket {
+    font-size: 20px;
+  }
+}

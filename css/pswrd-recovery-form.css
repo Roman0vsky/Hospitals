@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=GFS+Neohellenic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  padding: 0 60px 30px;
+}
+
+@media (max-width: 1000px) {
+  main {
+    padding: 0 30px 30px;
+  }
+}
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.pswrd-recovery-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #07beb8;
+  border-radius: 20px;
+  font-size: 40px;
+  gap: 50px;
+  width: 700px;
+  height: 450px;
+}
+
+.pswrd-recovery-form__title {
+  font-family: "Fredoka", sans-serif;
+  color: #c4fff9;
+}
+
+.input {
+  color: #c4fff9;
+  border-radius: 20px;
+  border: 4px solid #c4fff9;
+  background: #07beb8;
+  text-align: center;
+  font-size: 40px;
+  width: 570px;
+  height: 80px;
+}
+.input::-webkit-input-placeholder {
+  color: #c4fff9;
+}
+.input::-moz-placeholder {
+  color: #c4fff9;
+}
+.input:-ms-input-placeholder {
+  color: #c4fff9;
+}
+.input::-ms-input-placeholder {
+  color: #c4fff9;
+}
+.input::placeholder {
+  color: #c4fff9;
+}
+.input:hover {
+  border-color: #ffffff;
+}
+.input:focus {
+  border-color: #ffffff;
+  color: #ffffff;
+  outline: none;
+}
+.input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.input:focus::-moz-placeholder {
+  color: transparent;
+}
+.input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+.input:focus::-ms-input-placeholder {
+  color: transparent;
+}
+.input:focus::placeholder {
+  color: transparent;
+}
+
+.pswrd-recovery-form__submit {
+  font-family: "GFS Neohellenic", sans-serif;
+  border: 4px solid #07beb8;
+  border-radius: 20px;
+  background: #3dccc7;
+  color: #ffffff;
+  font-size: 40px;
+  width: 300px;
+  height: 70px;
+}
+.pswrd-recovery-form__submit:hover {
+  background: #ffffff;
+  color: #07beb8;
+}
+.pswrd-recovery-form__submit:active {
+  background: #07beb8;
+  color: #ffffff;
+}
+
+.pswrd-recovery-form__authorization {
+  position: relative;
+  color: #c4fff9;
+  text-decoration: none;
+}
+.pswrd-recovery-form__authorization::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: #c4fff9;
+  -webkit-transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, transform 300ms;
+  transition: opacity 300ms, transform 300ms, -webkit-transform 300ms;
+  opacity: 1;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+.pswrd-recovery-form__authorization:hover::after, .pswrd-recovery-form__authorization:focus::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+@media (max-width: 1400px) {
+  .pswrd-recovery-form,
+.input,
+.pswrd-recovery-form__submit {
+    font-size: 32px;
+  }
+  .pswrd-recovery-form__submit {
+    width: 200px;
+    height: 60px;
+  }
+  .pswrd-recovery-form {
+    width: 500px;
+    height: 360px;
+    gap: 40px;
+  }
+  .input {
+    max-width: 400px;
+    height: 60px;
+  }
+}
+@media (max-width: 600px) {
+  .pswrd-recovery-form,
+.input,
+.pswrd-recovery-form__submit {
+    font-size: 24px;
+  }
+  .pswrd-recovery-form__submit {
+    width: 150px;
+    height: 45px;
+  }
+  .input {
+    max-width: 320px;
+    height: 40px;
+  }
+  .pswrd-recovery-form {
+    width: 400px;
+    height: 270px;
+    gap: 30px;
+  }
+}

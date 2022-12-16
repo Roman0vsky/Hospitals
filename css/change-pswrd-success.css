@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=GFS+Neohellenic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  padding: 0 60px 30px;
+}
+
+@media (max-width: 1000px) {
+  main {
+    padding: 0 30px 30px;
+  }
+}
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  padding: 0 30px;
+}
+
+.change-pswrd__input {
+  color: #c4fff9;
+  border-radius: 20px;
+  border: 4px solid #c4fff9;
+  background: #07beb8;
+  text-align: center;
+}
+.change-pswrd__input::-webkit-input-placeholder {
+  color: #c4fff9;
+}
+.change-pswrd__input::-moz-placeholder {
+  color: #c4fff9;
+}
+.change-pswrd__input:-ms-input-placeholder {
+  color: #c4fff9;
+}
+.change-pswrd__input::-ms-input-placeholder {
+  color: #c4fff9;
+}
+.change-pswrd__input::placeholder {
+  color: #c4fff9;
+}
+.change-pswrd__input:hover {
+  border-color: #ffffff;
+}
+.change-pswrd__input:focus {
+  border-color: #ffffff;
+  color: #ffffff;
+  outline: none;
+}
+.change-pswrd__input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.change-pswrd__input:focus::-moz-placeholder {
+  color: transparent;
+}
+.change-pswrd__input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+.change-pswrd__input:focus::-ms-input-placeholder {
+  color: transparent;
+}
+.change-pswrd__input:focus::placeholder {
+  color: transparent;
+}
+
+.change-pswrd-form__submit {
+  font-family: "GFS Neohellenic", sans-serif;
+  border: 4px solid #07beb8;
+  border-radius: 20px;
+  background: #3dccc7;
+  color: #ffffff;
+}
+.change-pswrd-form__submit:hover {
+  background: #ffffff;
+  color: #07beb8;
+}
+.change-pswrd-form__submit:active {
+  background: #07beb8;
+  color: #ffffff;
+}
+
+.change-pswrd-form__password-recovery {
+  position: relative;
+  color: #c4fff9;
+  text-decoration: none;
+}
+.change-pswrd-form__password-recovery::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: #c4fff9;
+  -webkit-transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, transform 300ms;
+  transition: opacity 300ms, transform 300ms, -webkit-transform 300ms;
+  opacity: 1;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+.change-pswrd-form__password-recovery:hover::after, .change-pswrd-form__password-recovery:focus::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.change-pswrd-success-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #07beb8;
+  border-radius: 20px;
+  font-size: 40px;
+  gap: 120px;
+  width: 700px;
+  height: 320px;
+}
+
+.change-pswrd-success__title {
+  font-family: "Fredoka", sans-serif;
+  color: #c4fff9;
+  text-align: center;
+}
+
+.change-pswrd-success__authorization {
+  position: relative;
+  color: #c4fff9;
+  text-decoration: none;
+}
+.change-pswrd-success__authorization::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: #c4fff9;
+  -webkit-transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, transform 300ms;
+  transition: opacity 300ms, transform 300ms, -webkit-transform 300ms;
+  opacity: 1;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+.change-pswrd-success__authorization:hover::after, .change-pswrd-success__authorization:focus::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+@media (max-width: 1400px) {
+  .change-pswrd-success-form {
+    font-size: 32px;
+    width: 500px;
+    height: 250px;
+    gap: 90px;
+  }
+}
+@media (max-width: 600px) {
+  .change-pswrd-success-form {
+    font-size: 24px;
+    width: 400px;
+    height: 200px;
+    gap: 60px;
+  }
+}
